@@ -1,0 +1,15 @@
+@include 'header.html'
+
+<main>
+    <!-- Display a message when a new TODO is created -->
+    @if ctx.created_todo
+    <p class="form-success">Created a new todo!</p>
+    @endif
+
+    <section class="todos">
+        <p>Home</p>
+    </section>
+
+</main>    
+
+@include 'footer.html'

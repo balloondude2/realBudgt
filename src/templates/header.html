@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Budgt</title>
+    <!-- include our css from the assets folder -->
+    @css '/assets/main.css'
+</head>
+<body>
+<!-- <body  hx-boost="true"> -->
+    <header>
+      <nav>
+      <h1><a href="/">The Real Budgt</a></h1>
+      
+        <a href="/budget">Budget</a> |
+        <a href="/transactions">Expenses</a> | 
+        <a href="/categories">Categories</a> | 
+        <a href="/setup">Setup</a> | 
+        <a href="/savings">Rolling Savings</a> | 
+        <a href="/">Year Summary</a> 
+      </nav>
+    </header>
+  @if !ctx.form_error.is_blank()
+  
+  <p class="bad color bg border">${ctx.form_error}</p>
+  
+  @end
